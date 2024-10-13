@@ -1,0 +1,45 @@
+Contest,Dates,Sample,Pollster,Harris,Trump,Margin,Influence,cat
+Nevada,10/5 - 10/8@@23654,900 LV@@900,Emerson College,49.2,48.1,D+ 1.1@@-1.1,1.287184,D
+Nevada,10/6 - 10/9@@23655,800 LV@@800,"Fabrizio, Lee/McLaughlin",47,50,R+ 3@@3,0.6924934,R
+Nevada,9/30 - 10/3@@23649,782 LV@@782,RMG Research,49,49,Even@@0,0.6591266,E
+Nevada,9/28 - 10/8@@23647,600 RV@@600,Fabrizio/GBAO,42.5,48,R+ 5.5@@5.5,0.5976852,R
+Nevada,9/29 - 9/30@@23648,800 LV@@800,InsiderAdvantage,48.4,49.3,R+ 0.9@@.9,0.5444494,R
+Nevada,9/27 - 10/2@@23646,514 LV@@514,Redfield & Wilton,48,47,D+ 1@@-1,0.4516212,D
+Nevada,9/24 - 10/2@@23643,500 LV@@500,OnMessage,45,47,R+ 2@@2,0.3571843,R
+Nevada,9/23 - 9/25@@23642,736 LV@@736,TIPP Insights,49.45,48.2,D+ 1.2@@-1.2,0.3520536,D
+Nevada,9/20 - 9/25@@23639,858 LV@@858,AtlasIntel,50.55,47.7,D+ 2.8@@-2.8,0.3354185,D
+Nevada,9/23 - 9/29@@23642,407 LV@@407,Global Strategy Group/North Star Opinion Research,47.5,47,D+ 0.5@@-.5,0.2738307,D
+Nevada,9/19 - 9/25@@23638,516 LV@@516,Morning Consult,51,44.5,D+ 6.5@@-6.5,0.166446,D
+Nevada,9/19 - 9/25@@23638,409 LV@@409,Benenson Strategy/GS Strategy,48,47,D+ 1@@-1,0.1487899,D
+Nevada,9/19 - 9/22@@23638,738 LV@@738,Rasmussen Reports,48,49,R+ 1@@1,0.1325945,R
+Nevada,9/15 - 9/18@@23634,895 LV@@895,Emerson College,48.8,49,R+ 0.2@@.2,0.0872458,R
+Nevada,9/16 - 9/19@@23635,600 LV@@600,Tarrance Group,47,44,D+ 3@@-3,0.0771163,D
+Nevada,9/16 - 9/20@@23635,800 LV@@800,Remington Research,48,49,R+ 1@@1,0.0591029,R
+Nevada,9/16 - 9/19@@23635,652 LV@@652,Redfield & Wilton,45,45,Even@@0,0.050269,E
+Nevada,9/11 - 9/13@@23630,"1,079 LV@@1079",Trafalgar Group,45.3,43.5,D+ 1.8@@-1.8,0.0458615,D
+Nevada,9/9 - 9/16@@23628,692 LV@@692,OH Predictive Insights,47.5,47,D+ 0.5@@-.5,0.0396347,D
+Nevada,9/9 - 9/18@@23628,474 LV@@474,Morning Consult,50.87,46.53,D+ 4.3@@-4.3,0.0299754,D
+Nevada,9/3 - 9/16@@23622,"1,038 LV@@1038",Focaldata,50.4,48.25,D+ 2.2@@-2.2,0.0266687,D
+Nevada,9/6 - 9/9@@23625,698 LV@@698,Redfield & Wilton,45,46,R+ 1@@1,0.0056352,R
+Nevada,8/7 - 8/14@@23595,350 RV@@350,Strategies 360,48,42,D+ 6@@-6,0,D
+Nevada,8/23 - 8/29@@23611,626 LV@@626,SSRS,48,47,D+ 1@@-1,0,D
+Nevada,8/3 - 8/5@@23591,991 LV@@991,Decipher AI,49.2,43.6,D+ 5.6@@-5.6,0,D
+Nevada,8/13 - 8/19@@23601,980 LV@@980,Rasmussen Reports,45,47,R+ 2@@2,0,R
+Nevada,8/23 - 8/26@@23611,416 LV@@416,Morning Consult,49,46,D+ 3@@-3,0,D
+Nevada,8/25 - 8/28@@23613,"1,168 LV@@1168",Emerson College,49.4,48.8,D+ 0.6@@-.6,0,D
+Nevada,7/26 - 8/2@@23583,403 LV@@403,Benenson Strategy/GS Strategy,43.5,47.5,R+ 4@@4,0,R
+Nevada,8/6 - 8/8@@23594,"1,087 LV@@1087",Trafalgar Group,44.8,48.2,R+ 3.4@@3.4,0,R
+Nevada,9/1 - 9/3@@23620,788 RV@@788,Patriot Polling,46.8,47,R+ 0.2@@.2,0,R
+Nevada,8/12 - 8/15@@23600,677 LV@@677,NYT/Siena,45.5,47,R+ 1.5@@1.5,0,R
+Nevada,8/30 - 9/8@@23618,516 LV@@516,Morning Consult,47.58,48.45,R+ 0.9@@.9,0,R
+Nevada,7/15 - 7/16@@23572,800 LV@@800,InsiderAdvantage,40,50,R+ 10@@10,0,R
+Nevada,8/23 - 9/3@@23611,760 LV@@760,YouGov,49,47,D+ 2@@-2,0,D
+Nevada,8/6 - 8/16@@23594,678 LV@@678,Focaldata,50.75,44.35,D+ 6.4@@-6.4,0,D
+Nevada,7/22 - 7/24@@23579,435 LV@@435,Redfield & Wilton,43,45,R+ 2@@2,0,R
+Nevada,7/31 - 8/3@@23588,470 LV@@470,Redfield & Wilton,40,40,Even@@0,0,E
+Nevada,7/23 - 7/29@@23580,400 LV@@400,Public Opinion Strategies,45,46,R+ 1@@1,0,R
+Nevada,8/12 - 8/15@@23600,536 LV@@536,Redfield & Wilton,42,43,R+ 1@@1,0,R
+Nevada,8/29 - 8/31@@23617,800 LV@@800,InsiderAdvantage,46.5,47.9,R+ 1.4@@1.4,0,R
+Nevada,8/23 - 8/26@@23611,"1,026 RV@@1026",Beacon Research/Shaw & Co.,49,47,D+ 2@@-2,0,D
+Nevada,7/24 - 7/28@@23581,454 RV@@454,Morning Consult,45,44,D+ 1@@-1,0,D
+Nevada,8/25 - 8/28@@23613,490 LV@@490,Redfield & Wilton,47,47,Even@@0,0,E

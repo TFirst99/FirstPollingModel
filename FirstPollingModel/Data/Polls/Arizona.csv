@@ -1,0 +1,61 @@
+Contest,Dates,Sample,Pollster,Harris,Trump,Margin,Influence,cat
+Arizona,10/7 - 10/10@@23656,808 LV@@808,NYT/Siena,45.5,50.5,R+ 5@@5,1.479224,R
+Arizona,10/5 - 10/8@@23654,"1,000 LV@@1000",Emerson College,48.2,50.5,R+ 2.3@@2.3,1.256392,R
+Arizona,10/6 - 10/9@@23655,800 LV@@800,"Fabrizio, Lee/McLaughlin",46,49,R+ 3@@3,0.6634247,R
+Arizona,9/30 - 10/2@@23649,783 LV@@783,RMG Research,46,50,R+ 4@@4,0.6187132,R
+Arizona,9/28 - 10/8@@23647,600 RV@@600,Fabrizio/GBAO,47.5,45.5,D+ 2@@-2,0.5647843,D
+Arizona,9/27 - 9/28@@23646,920 LV@@920,Emerson College,47.6,51.7,R+ 4.1@@4.1,0.509012,R
+Arizona,9/29 - 9/30@@23648,800 LV@@800,InsiderAdvantage,47.7,49.1,R+ 1.4@@1.4,0.5034299,R
+Arizona,9/27 - 10/2@@23646,555 LV@@555,Redfield & Wilton,47,48,R+ 1@@1,0.4266949,R
+Arizona,9/24 - 10/1@@23643,600 LV@@600,"Fabrizio, Lee/Impact Research",47.5,49.5,R+ 2@@2,0.3576927,R
+Arizona,9/24 - 10/2@@23643,500 LV@@500,OnMessage,45,47,R+ 2@@2,0.3302737,R
+Arizona,9/26 - 9/29@@23645,500 LV@@500,HighGround,47.6,45.4,D+ 2.2@@-2.2,0.3296278,D
+Arizona,9/25 - 9/29@@23644,600 LV@@600,National Research,47,46,D+ 1@@-1,0.3237368,D
+Arizona,9/20 - 9/25@@23639,946 LV@@946,AtlasIntel,48.6,49.75,R+ 1.2@@1.2,0.2901868,R
+Arizona,9/19 - 9/24@@23638,"1,264 LV@@1264",Marist College,49,50,R+ 1@@1,0.2502545,R
+Arizona,9/23 - 9/29@@23642,400 LV@@400,Global Strategy Group/North Star Opinion Research,47.5,47,D+ 0.5@@-.5,0.2428231,D
+Arizona,9/20 - 9/24@@23639,764 LV@@764,Beacon Research/Shaw & Co.,47.5,50.5,R+ 3@@3,0.2123011,R
+Arizona,9/19 - 9/24@@23638,500 LV@@500,Suffolk University,42.4,48.4,R+ 6@@6,0.1679574,R
+Arizona,9/19 - 9/25@@23638,926 LV@@926,Morning Consult,49.5,46.5,D+ 3@@-3,0.1517395,D
+Arizona,9/19 - 9/25@@23638,409 LV@@409,Benenson Strategy/GS Strategy,50,47.5,D+ 2.5@@-2.5,0.1195082,D
+Arizona,9/19 - 9/22@@23638,"1,030 LV@@1030",Rasmussen Reports,47,49,R+ 2@@2,0.1069848,R
+Arizona,9/17 - 9/21@@23636,713 LV@@713,NYT/Siena,44,49,R+ 5@@5,0.1046293,R
+Arizona,9/15 - 9/18@@23634,868 LV@@868,Emerson College,48.7,49.8,R+ 1.1@@1.1,0.0783703,R
+Arizona,9/16 - 9/19@@23635,789 LV@@789,Redfield & Wilton,47,47,Even@@0,0.0515463,E
+Arizona,9/11 - 9/12@@23630,"1,088 LV@@1088",Trafalgar Group,45.5,47.1,R+ 1.6@@1.6,0.0437764,R
+Arizona,9/9 - 9/18@@23628,862 LV@@862,Morning Consult,48.37,47.35,D+ 1@@-1,0.0321686,D
+Arizona,9/3 - 9/16@@23622,"1,097 LV@@1097",Focaldata,50.25,48.75,D+ 1.5@@-1.5,0.0240424,D
+Arizona,9/7 - 9/9@@23626,550 LV@@550,Data Orbital,46,46.2,R+ 0.2@@.2,0.004603,R
+Arizona,9/6 - 9/9@@23625,765 LV@@765,Redfield & Wilton,46,47,R+ 1@@1,0.0029696,R
+Arizona,8/23 - 9/3@@23611,837 LV@@837,YouGov,45,49,R+ 4@@4,0,R
+Arizona,8/30 - 9/8@@23618,901 LV@@901,Morning Consult,46.89,49.05,R+ 2.2@@2.2,0,R
+Arizona,7/31 - 8/8@@23588,600 LV@@600,GSG/GBAO,45.5,47.5,R+ 2@@2,0,R
+Arizona,7/31 - 8/3@@23588,567 LV@@567,Redfield & Wilton,44,43,D+ 1@@-1,0,D
+Arizona,7/29 - 8/5@@23586,600 LV@@600,Iron Light,43,43,Even@@0,0,E
+Arizona,9/1 - 9/3@@23620,804 RV@@804,Patriot Polling,46.9,48.5,R+ 1.6@@1.6,0,R
+Arizona,9/3 - 9/5@@23622,949 LV@@949,TIPP Insights,47.4,47.25,D+ 0.2@@-.2,0,D
+Arizona,8/23 - 8/26@@23611,"1,014 RV@@1014",Beacon Research/Shaw & Co.,49,48,D+ 1@@-1,0,D
+Arizona,8/13 - 8/17@@23601,"1,187 LV@@1187",Rasmussen Reports,44.5,46,R+ 1.5@@1.5,0,R
+Arizona,7/22 - 7/23@@23579,800 RV@@800,Emerson College,43.6,50.05,R+ 6.5@@6.5,0,R
+Arizona,8/12 - 8/16@@23600,"1,003 RV@@1003",OH Predictive Insights,43.5,45.5,R+ 2@@2,0,R
+Arizona,7/22 - 7/24@@23579,510 LV@@510,Redfield & Wilton,43,46,R+ 3@@3,0,R
+Arizona,8/7 - 8/14@@23595,400 RV@@400,Strategies 360,47,46,D+ 1@@-1,0,D
+Arizona,8/25 - 8/28@@23613,530 LV@@530,Redfield & Wilton,45,46,R+ 1@@1,0,R
+Arizona,8/25 - 8/28@@23613,720 LV@@720,Emerson College,47.5,51.2,R+ 3.7@@3.7,0,R
+Arizona,8/23 - 8/27@@23611,776 LV@@776,Morning Consult,48.5,47.5,D+ 1@@-1,0,D
+Arizona,8/29 - 8/31@@23617,800 LV@@800,InsiderAdvantage,48.4,48.6,R+ 0.2@@.2,0,R
+Arizona,7/29 - 7/30@@23586,618 RV@@618,Public Policy Polling,47,49,R+ 2@@2,0,R
+Arizona,7/15 - 7/16@@23572,800 LV@@800,InsiderAdvantage,42,48,R+ 6@@6,0,R
+Arizona,8/14 - 8/20@@23602,600 LV@@600,Spry Strategies,46.85,47.55,R+ 0.7@@.7,0,R
+Arizona,7/19 - 7/20@@23576,736 RV@@736,Public Policy Polling,40,46,R+ 6@@6,0,R
+Arizona,7/24 - 7/28@@23581,804 RV@@804,Morning Consult,48.5,45.5,D+ 3@@-3,0,D
+Arizona,8/12 - 8/15@@23600,592 LV@@592,Redfield & Wilton,43,44,R+ 1@@1,0,R
+Arizona,8/8 - 8/15@@23596,677 LV@@677,NYT/Siena,48.5,44,D+ 4.5@@-4.5,0,D
+Arizona,7/31 - 8/5@@23588,800 LV@@800,Moore Information,42,44,R+ 2@@2,0,R
+Arizona,8/6 - 8/8@@23594,"1,092 LV@@1092",Trafalgar Group,46.5,47.7,R+ 1.2@@1.2,0,R
+Arizona,8/23 - 8/29@@23611,682 LV@@682,SSRS,44,49,R+ 5@@5,0,R
+Arizona,7/23 - 7/29@@23580,400 LV@@400,Public Opinion Strategies,43,48,R+ 5@@5,0,R
+Arizona,7/30 - 8/5@@23587,500 LV@@500,HighGround,44.4,41.6,D+ 2.8@@-2.8,0,D
+Arizona,7/26 - 8/2@@23583,435 LV@@435,Benenson Strategy/GS Strategy,47,44,D+ 3@@-3,0,D
+Arizona,8/6 - 8/16@@23594,702 LV@@702,Focaldata,46.75,48.65,R+ 1.9@@1.9,0,R
+Arizona,7/10 - 7/11@@23567,596 RV@@596,Public Policy Polling,44,52,R+ 8@@8,0,R
