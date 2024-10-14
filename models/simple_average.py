@@ -1,14 +1,10 @@
 import pandas as pd
 import numpy as np
-import re
+
 
 def calculate_weighted_average(file_path):
-    # Read the CSV file
-    df = pd.read_csv(file_path)
-
-    # Clean and convert the Sample column
-    df['Sample'] = df['Sample'].apply(lambda x: re.search(r'(\d+)', str(x)).group(1) if re.search(r'(\d+)', str(x)) else None)
-    df['Sample'] = pd.to_numeric(df['Sample'], errors='coerce')
+    # Read and preprocess the CSV file
+    df = preprocess_data(file_path)
 
     # Calculate weighted average for Harris and Trump
     total_sample = df['Sample'].sum()
@@ -22,11 +18,20 @@ def calculate_weighted_average(file_path):
         'Total_Sample': total_sample
     }
 
+def preprocess_data(file_path):
+    # Read the CSV file
+    df = pd.read_csv(file_path)
+
+    # Clean and convert the Sample column
+    df['Sample'] = df['Sample'].str.split('@@').str[1].astype(float)
+
+    return df
+
 if __name__ == "__main__":
     file_path = "data/polls/Nat.csv"
     results = calculate_weighted_average(file_path)
 
-    print("Polling Average Results:")
+    print("Simple Polling Average Results:")
     print(f"Harris: {results['Harris']:.2f}%")
     print(f"Trump: {results['Trump']:.2f}%")
     print(f"Difference (Harris - Trump): {results['Harris_Trump_Difference']:.2f}%")

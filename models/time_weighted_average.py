@@ -3,28 +3,10 @@ import numpy as np
 from datetime import datetime, timedelta
 
 def calculate_weighted_average(file_path):
-    # Read the CSV file
-    df = pd.read_csv(file_path)
+    df = preprocess_data(file_path)
+    df = calculate_time_weights(df)
 
-    # Clean and convert the Sample column
-    df['Sample'] = df['Sample'].str.split('@@').str[1].astype(float)
-
-    # Convert Dates to datetime
-    df['EndDate'] = pd.to_datetime(df['Dates'].str.split('-').str[-1].str.split('@@').str[0].str.strip(), format='%m/%d')
-
-    # Calculate days since the most recent poll
-    most_recent_date = df['EndDate'].max()
-    df['DaysSince'] = (most_recent_date - df['EndDate']).dt.days
-
-    # Calculate date weight (linear decay over 30 days)
-    max_days = 30
-    df['DateWeight'] = 1 - df['DaysSince'] / max_days
-    df.loc[df['DateWeight'] < 0, 'DateWeight'] = 0
-
-    # Combine sample size weight and date weight
-    df['CombinedWeight'] = df['Sample'] * df['DateWeight']
-
-    # Calculate weighted average for Harris and Trump
+    # calculate weighted averages
     total_weight = df['CombinedWeight'].sum()
     harris_avg = np.average(df['Harris'], weights=df['CombinedWeight'])
     trump_avg = np.average(df['Trump'], weights=df['CombinedWeight'])
@@ -36,11 +18,31 @@ def calculate_weighted_average(file_path):
         'Total_Weight': total_weight
     }
 
+def preprocess_data(file_path):
+    df = pd.read_csv(file_path)
+
+    df['Sample'] = df['Sample'].str.split('@@').str[1].astype(float)
+    df['EndDate'] = pd.to_datetime(df['Dates'].str.split('-').str[-1].str.split('@@').str[0].str.strip(), format='%m/%d')
+
+    return df
+
+def calculate_time_weights(df):
+    most_recent_date = df['EndDate'].max()
+    df['DaysSince'] = (most_recent_date - df['EndDate']).dt.days
+
+    max_days = 30
+    df['DateWeight'] = 1 - df['DaysSince'] / max_days
+    df.loc[df['DateWeight'] < 0, 'DateWeight'] = 0
+
+    df['CombinedWeight'] = df['Sample'] * df['DateWeight']
+
+    return df
+
 if __name__ == "__main__":
     file_path = "data/polls/Nat.csv"
     results = calculate_weighted_average(file_path)
 
-    print("Advanced Polling Average Results:")
+    print("Time-Weighted Polling Average Results:")
     print(f"Harris: {results['Harris']:.2f}%")
     print(f"Trump: {results['Trump']:.2f}%")
     print(f"Difference (Harris - Trump): {results['Harris_Trump_Difference']:.2f}%")
