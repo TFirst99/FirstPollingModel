@@ -1,4 +1,4 @@
-## Polling Model
+## Polling Average Model
 
 a python project that shows the impact of different weighting methods on a polling average
 
@@ -14,5 +14,6 @@ a python project that shows the impact of different weighting methods on a polli
    `pip install -r requirements.txt`
 5. run the model
    `python3 -m models.main`
-
+   
+   
 Polls last updated 10/12 - Data from Silver Bulletin
