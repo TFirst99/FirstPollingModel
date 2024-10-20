@@ -10,5 +10,5 @@ __pycache__/
 # logs
 *.log
 
-#outputs
+# outputs
 polling_average.png
