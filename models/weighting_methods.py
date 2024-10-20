@@ -31,11 +31,6 @@ def combined_weight(df: pd.DataFrame, params: Dict[str, Any]) -> np.ndarray:
     time_weights = exponential_time_weight(df, params)
     quality_weights = pollster_quality_weight(df, params['ratings_df'])
 
-    #normalize the weights
-    sample_weights = sample_weights / np.sum(sample_weights)
-    time_weights = time_weights / np.sum(time_weights)
-    quality_weights = quality_weights / np.sum(quality_weights)
-
     return sample_weights * time_weights * quality_weights
 
 def simple_average(df: pd.DataFrame, _: Dict[str, Any]) -> np.ndarray:
