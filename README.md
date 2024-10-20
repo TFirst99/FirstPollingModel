@@ -14,6 +14,11 @@ a python project that shows the impact of different weighting methods on a polli
    `pip install -r requirements.txt`
 5. run the model
    `python3 -m models.main`
-   
-   
+
+## Data
+
 Polls last updated 10/12 - Data from Silver Bulletin
+
+## Polling Averages
+
+![Polling Average](https://github.com/user-attachments/assets/e43759ec-bfce-486f-be3f-09cf8973c72b)
