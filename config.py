@@ -1,10 +1,12 @@
 # config.py
 
 WEIGHTING_METHODS = {
-    'Sample Size': 'sample_size_weight',
-    'Linear Time': 'linear_time_weight',
-    'Exponential Time': 'exponential_time_weight',
-    'Pollster Quality': 'pollster_quality_weight'
+    'sample_size': 'sample_size_weight',
+    'linear_time': 'linear_time_weight',
+    'exponential_time': 'exponential_time_weight',
+    'pollster_quality': 'pollster_quality_weight',
+    'combined': 'combined_weight',
+    'simple_average': 'simple_average'
 }
 
 TIME_WEIGHTING = {
@@ -27,4 +29,4 @@ DATA_PATHS = {
     'pollster_ratings': 'data/pollsterRatings.csv'
 }
 
-OUTPUT_PATH = 'poll_results_comparison.png'
+OUTPUT_PATH = 'polling_average.png'

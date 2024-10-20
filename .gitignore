@@ -11,4 +11,4 @@ __pycache__/
 *.log
 
 #outputs
-poll_results_comparison.png
+polling_average.png
