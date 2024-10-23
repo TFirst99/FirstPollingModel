@@ -21,6 +21,6 @@ Polls last updated 10/12 - Data from Silver Bulletin
 
 ## Polling Averages
 
-# an example output
+### an example output
 
 ![Polling Average](https://github.com/user-attachments/assets/bc035c96-ec28-4fe3-9c17-f8672c93e896)
