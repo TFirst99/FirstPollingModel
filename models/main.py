@@ -21,7 +21,10 @@ def main():
         params = {
             'max_days': TIME_WEIGHTING['linear_max_days'],
             'decay_rate': TIME_WEIGHTING['exponential_decay_rate'],
-            'ratings_df': model.ratings_data
+            'ratings_df': model.ratings_data,
+            'sample_weight': 0.33,
+            'time_weight': 0.33,
+            'quality_weight': 0.34
         }
 
         results = {name: run_model_with_method(model, name, params)
