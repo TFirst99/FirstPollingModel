@@ -2,6 +2,9 @@ import numpy as np
 import pandas as pd
 from typing import Dict, Any
 
+def normalize(weights):
+    return weights / np.sum(weights)
+
 def sample_size_weight(df: pd.DataFrame, _: Dict[str, Any]) -> np.ndarray:
     return np.sqrt(df['Sample'])
 
@@ -27,11 +30,17 @@ def pollster_quality_weight(df: pd.DataFrame, ratings_df: pd.DataFrame) -> np.nd
     return weights
 
 def combined_weight(df: pd.DataFrame, params: Dict[str, Any]) -> np.ndarray:
-    sample_weights = sample_size_weight(df, params)
-    time_weights = exponential_time_weight(df, params)
-    quality_weights = pollster_quality_weight(df, params['ratings_df'])
+    sample_weights = normalize(sample_size_weight(df, params))
+    time_weights = normalize(exponential_time_weight(df, params))
+    quality_weights = normalize(pollster_quality_weight(df, params['ratings_df']))
 
-    return sample_weights * time_weights * quality_weights
+    combined_weights = (
+        params['sample_weight'] * sample_weights +
+        params['time_weight'] * time_weights +
+        params['quality_weight'] * quality_weights
+    )
+
+    return normalize(combined_weights)
 
 def simple_average(df: pd.DataFrame, _: Dict[str, Any]) -> np.ndarray:
     return np.ones(len(df))
