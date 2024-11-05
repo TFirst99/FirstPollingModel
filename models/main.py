@@ -1,3 +1,4 @@
+import argparse
 import pandas as pd
 import numpy as np
 from typing import Dict, Optional, Any
@@ -15,10 +16,7 @@ class PollModel:
         sample_weights = np.sqrt(df['Sample'])
         time_weights = np.exp(-0.1 * days_since)
 
-        min_score = df['pollscore'].min()
-        max_score = df['pollscore'].max()
-        normalized_pollscores = (df['pollscore'] - min_score) / (max_score - min_score)
-        pollscore_weights = 1 + normalized_pollscores
+        pollscore_weights = 1 - (df['pollscore'] - df['pollscore'].min()) / (df['pollscore'].max() - df['pollscore'].min())
 
         weights = sample_weights * time_weights * pollscore_weights
 
@@ -85,19 +83,22 @@ def run_model(poll_file: str, params: Dict, state: Optional[str] = None):
         raise
 
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Analyze polling data for a specific state')
+    parser.add_argument('--state', type=str, help='State to analyze (e.g., California)')
+    parser.add_argument('--step-days', type=int, default=1, help='Number of days between each analysis point')
+    args = parser.parse_args()
     params = {
-        'step_days': 1
+        'step_days': args.step_days
     }
 
     from plotting import plot_state_results
     from data_loader import load_poll_data
 
-    target_states = ['California', 'Pennsylvania', 'Texas']
-
-    all_polls = load_poll_data('data/data.csv')
-
-    for state in target_states:
+    if args.state:
+        state = args.state
         print(f"\nAnalyzing {state}:")
+
+        all_polls = load_poll_data('data/data.csv')
         state_polls = all_polls[all_polls['state'] == state]
         print(f"Number of polls for {state}: {len(state_polls)}")
 
@@ -117,3 +118,5 @@ if __name__ == "__main__":
                 print(f"No valid results for {state}")
         else:
             print(f"No polls found for {state}")
+    else:
+        print("Please specify a state using --state argument")
