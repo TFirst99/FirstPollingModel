@@ -62,7 +62,7 @@ class PollModel:
 
 def run_model(poll_file: str, params: Dict, state: Optional[str] = None):
     try:
-        from data_loader import load_poll_data
+        from .data_loader import load_poll_data
         polls = load_poll_data(poll_file)
 
         if state is not None:
@@ -91,8 +91,8 @@ if __name__ == "__main__":
         'step_days': args.step_days
     }
 
-    from plotting import plot_state_results
-    from data_loader import load_poll_data
+    from .plotting import plot_state_results
+    from .data_loader import load_poll_data
 
     if args.state:
         state = args.state

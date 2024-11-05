@@ -26,15 +26,3 @@ def load_poll_data(file_path: str) -> pd.DataFrame:
     final_df = final_df[['EndDate', 'Sample', 'Harris', 'Trump', 'pollscore', 'state']]
     final_df = pd.DataFrame(final_df.dropna())
     return final_df
-
-if __name__ == "__main__":
-    # data validation
-    df = load_poll_data('data/data.csv')
-    print("\nFirst few rows of processed data:")
-    print(df.head())
-    print("\nColumns in processed data:")
-    print(df.columns.tolist())
-    print("\nData types of columns:")
-    print(df.dtypes)
-    print("\nMissing values in each column:")
-    print(df.isnull().sum())
