@@ -2,6 +2,10 @@
 
 A program that generates a polling average, weighted by sample size, poll age, and quality score for the pollster.
 
+## TODO:
+1. full election model using monte carlo simulations with state polling averages
+2. create custom pollster ratings
+
 ## Setup
 
 1. clone this repository
