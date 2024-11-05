@@ -2,6 +2,10 @@
 
 a python project that shows the impact of different weighting methods on a polling average
 
+## TODO:
+1. full election model using monte carlo simulations with state polling averages
+2. create custom pollster ratings
+
 ## Setup
 
 1. clone this repository
