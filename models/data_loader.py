@@ -1,17 +1,28 @@
 import pandas as pd
 from datetime import datetime
 
-def load_poll_data(file_path):
+def load_poll_data(file_path: str) -> pd.DataFrame:
     df = pd.read_csv(file_path)
-    df['Sample'] = df['Sample'].str.split('@@').str[1].astype(float)
-    df['EndDate'] = pd.to_datetime(df['Dates'].str.split('-').str[-1].str.split('@@').str[0].str.strip(), format='%m/%d')
-    current_year = datetime.now().year
-    df['EndDate'] = df['EndDate'].apply(lambda x: x.replace(year=current_year))
-    return df
 
-def load_pollster_ratings(file_path):
-    df = pd.read_csv(file_path)
-    df['Grade'] = df['Grade'].str.split('@@').str[0]
-    df['Predictive +/-'] = df['Predictive +/-'].astype(float)
-    df['Mean-reverted bias'] = df['Mean-reverted bias'].str.split('@@').str[1].astype(float)
-    return df
+    df['EndDate'] = pd.to_datetime(df['end_date'], format='%m/%d/%y')
+    cutoff_date = pd.to_datetime('2024-08-01')
+    df = df[df['EndDate'] >= cutoff_date]
+    df['Sample'] = pd.to_numeric(df['sample_size'], errors='coerce')
+    df['state'] = df['state']
+    df['pollscore'] = df['pollscore']
+
+    vote_shares = df.pivot_table(
+        index=['poll_id', 'EndDate', 'Sample', 'pollscore', 'state'],
+        columns='candidate_name',
+        values='pct',
+        aggfunc='first'
+    ).reset_index()
+
+    final_df = vote_shares.rename(columns={
+        'Kamala Harris': 'Harris',
+        'Donald Trump': 'Trump'
+    })
+
+    final_df = final_df[['EndDate', 'Sample', 'Harris', 'Trump', 'pollscore', 'state']]
+    final_df = pd.DataFrame(final_df.dropna())
+    return final_df
