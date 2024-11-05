@@ -2,6 +2,10 @@
 
 A program that generates a polling average, weighted by sample size, poll age, and quality score for the pollster.
 
+## Example State Average
+
+![Polling Average](https://github.com/user-attachments/assets/633234cf-272b-4925-ae79-f0c0e967a279)
+
 ## TODO:
 1. full election model using monte carlo simulations with state polling averages
 2. create custom pollster ratings
@@ -23,7 +27,3 @@ A program that generates a polling average, weighted by sample size, poll age, a
 ## Data
 
 Polls last updated 11/5 - Data from FiveThirtyEight, Pollscore from 538
-
-## Example State Average
-
-![Polling Average](https://github.com/user-attachments/assets/633234cf-272b-4925-ae79-f0c0e967a279)
